@@ -10,11 +10,14 @@ import { HomeComponent } from './home/home.component';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { ContactComponent } from './contact/contact.component';
 
+import { TodoListComponent } from './todo/todo-list.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    TodoListComponent
   ],
   imports: [
     BrowserModule,

@@ -1,29 +1,36 @@
-<h3>
-  Angular 2 Seed
-</h3>
-<nav>
-	<a [routerLink]="['/']">
-    Home
-  </a>
-  |
-	<a>
-    Wetter
-  </a>
-  |
-	<a>
-    Todo
-  </a>
-  |
-	<a [routerLink]="['/contact']">
-    Contact Us
-  </a>
-</nav>
+<div id="wrapper">
+	<div class="header">
+	</div>
+	<!-- Sidebar -->
+	<div id="sidebar-wrapper">
+		<ul class="sidebar-nav">
+			<li class="sidebar-brand">
+				<a href="#">Start Angular2</a>
+			</li>
+			<li>
+				<a [routerLink]="['/']">Home</a>
+			</li>
+			<li>
+				<a>Wetter</a>
+			</li>
+			<li>
+				<a [routerLink]="['/todo']">Todo</a>
+			</li>
+			<li>
+				<a [routerLink]="['/contact']">Contact Us</a>
+			</li>
+		</ul>
+	</div>
 
-<main>
-	<router-outlet></router-outlet>
-</main>
+	<!-- Page Content -->
+	<div id="page-content-wrapper">
+		<div class="container-fluid">
+			<router-outlet></router-outlet>
+		</div>
+	</div>
 
 
-<footer>
-  © 2016
-</footer>
+	<footer>
+		© 2016
+	</footer>
+</div>
