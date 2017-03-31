@@ -11,6 +11,7 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { ContactComponent } from './contact/contact.component';
 
 import { TodoListComponent } from './todo/todo-list.component';
+import { TodoDataService } from './todo/todo-data.service';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { TodoListComponent } from './todo/todo-list.component';
     RouterModule.forRoot(rootRouterConfig, { useHash: true })
   ],
   providers: [
+    TodoDataService
   ],
   bootstrap: [ AppComponent ]
 })
