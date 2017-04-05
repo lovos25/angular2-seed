@@ -13,24 +13,30 @@ import { ContactComponent } from './contact/contact.component';
 import { TodoListComponent } from './todo/todo-list.component';
 import { TodoDataService } from './todo/todo-data.service';
 
+import { WeatherListComponent } from "./weather/weather-list.component";
+import { WeatherItemComponent } from "./weather/weather-item.component";
+import { WeatherSearchComponent } from "./weather/weather-search.component";
+import { WeatherService } from "./weather/weather.service";
+
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    ContactComponent,
-    TodoListComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    ReactiveFormsModule,
-    HttpModule,
-    RouterModule.forRoot(rootRouterConfig, { useHash: true })
-  ],
-  providers: [
-    TodoDataService
-  ],
-  bootstrap: [ AppComponent ]
+	declarations: [
+		AppComponent,
+		HomeComponent,
+		ContactComponent,
+		TodoListComponent,
+		WeatherListComponent, WeatherItemComponent, WeatherSearchComponent
+	],
+	imports: [
+		BrowserModule,
+		FormsModule,
+		ReactiveFormsModule,
+		HttpModule,
+		RouterModule.forRoot(rootRouterConfig, { useHash: true })
+	],
+	providers: [
+		TodoDataService, WeatherService
+	],
+	bootstrap: [ AppComponent ]
 })
 export class AppModule {
 
