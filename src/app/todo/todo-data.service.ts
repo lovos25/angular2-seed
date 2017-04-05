@@ -17,9 +17,12 @@ export class TodoDataService {
 
 	// Simulate POST /todos
 	addTodo(todo: Todo): TodoDataService {
+		if(!todo.title) return;
+
 		if (!todo.id) {
 			todo.id = ++this.lastId;
 		}
+
 		this.todos.push(todo);
 		return this;
 	}

@@ -1,0 +1,46 @@
+.todoapp h1 {
+    font-size: 100px;
+    font-weight: bold;
+    color: #888888;
+}
+
+.todoapp .header input {
+    padding: 16px;
+    font-size: 24px;
+    border-width: 4px;
+    width: 80%;
+}
+
+.todoapp .main {
+    width: 80%;
+}
+
+.todoapp .todo-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.todoapp .todo-list li {
+     border: 1px solid #e6e6e6
+}
+
+.todoapp .todo-list li .view {
+    padding: 10px;
+    clear: both;
+}
+
+.todoapp .todo-list li input[type=file],
+.todoapp .todo-list li input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+ }
+
+.todoapp .todo-list li label {
+    font-size: 27px;
+    margin-bottom: 0;
+}
+
+.todoapp .todo-list li .destroy {
+    float: right;
+}

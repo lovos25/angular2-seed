@@ -4,10 +4,6 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
- body {
-    overflow-x: hidden;
- }
-
 /* Toggle Styles */
 
 #wrapper {
@@ -24,7 +20,7 @@
 
 #sidebar-wrapper {
     z-index: 1000;
-    position: fixed;
+    position: absolute;
     width: 250px;
     height: 100%;
     margin-left: 0px;
@@ -42,8 +38,8 @@
 
 #page-content-wrapper {
     width: 100%;
-    padding: 15px;
-    margin-left: 250px;
+    position: relative;
+    padding-left: 250px;
 }
 
 /* Sidebar Styles */
@@ -103,7 +99,6 @@
     }
 
     #page-content-wrapper {
-        padding: 20px;
         position: relative;
     }
 
